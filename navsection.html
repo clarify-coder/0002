@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steven's Kitchen</title>
+    <link rel="stylesheet" href="css/navsection.css" />
+    <script src="navsection.js" defer></script>
+  </head>
+  <body id="home">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="">
+          <img src="menu_image/logo.png" alt="" class="logo" />
+          <div class="brand-text">
+            <span>STEVEN'S</span>
+            <span>KITCHEN</span>
+          </div>
+        </a>
+        <ul class="nav-link-btn-wapper">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="men-btn" data-state="open" onclick="toggleMenu()">
+          <span class="menu"></span>
+          <span class="menu"></span>
+          <span class="menu"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>THE BEST MOHINGAR IN THAILAND</h1>
+        <p>
+          The national dish of Myanmar, a savory, aromatic soup featuring thin rice noodles in a
+          catfish-based broth thickened with toasted rice or chickpea flour
+        </p>
+        <div class="order-button">
+          <a
+            href="https://r.grab.com/g/6-20260310_151401_5d5c79627a32440ab6fbefcee2f7c655_MEXMPS-3-C7LJAUMCVJ6GCJ"
+            target="_blank"
+            class="order-btn"
+          >
+            Order On GRAB
+          </a>
+          <a href="https://lin.ee/203HxDV?openExternalBrowser=1" target="_blank" class="order-btn">
+            Order On LINEMAN
+          </a>
+          <a href="https://m.me/61570270215016" target="_blank" class="msg-btn">
+            Order On Messengers
+          </a>
+        </div>
+      </div>
+      <img src="menu_image/hero-section.png" alt="" />
+    </section>
+
+    <section id="menu" class="menu-section">
+      <h1 style="color: var(--background)">Our Delicious Menu</h1>
+      <!-- ===== COLUMN 1 ===== -->
+      <div class="filter-menu-button">
+        <button data-category="all" class="active">All</button>
+        <button data-category="rice">Rice</button>
+        <button data-category="noodle">Noodle</button>
+        <button data-category="curry">Curry</button>
+        <button data-category="drink">Drink</button>
+        <button data-category="roti">Roti</button>
+        <button data-category="soup">Soup</button>
+        <button data-category="salad">Salad</button>
+        <button data-category="snack">Snack</button>
+        <button data-category="vegetable">Vegetable</button>
+        <button data-category="egg">Egg</button>
+      </div>
+      <article class="menu-card" data-category="soup">
+        <img src="menu_image/mohingar-soup.png" alt="Mohingar Soup" />
+        <h3>Mohingar Soup</h3>
+        <div bis_skin_checked="1">Price 70฿</div>
+      </article>
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/steam-rice-oil-with-royal-bean.jpg"
+          alt="Steam Rice Oil With Royal Bean"
+        />
+        <h3>Steam Rice Oil With Royal Bean</h3>
+        <div bis_skin_checked="1">Price 59฿</div>
+      </article>
+
+      <article class="menu-card" data-category="rice">
+        <img src="menu_image/fried-rice-with-royal-bean.jpg" alt="Fried Rice with Royal Bean" />
+        <h3>Fried Rice with Royal Bean</h3>
+        <div bis_skin_checked="1">Price 75฿</div>
+      </article>
+
+      <article class="menu-card" data-category="roti">
+        <img src="menu_image/royal-bean-with-flow-roti.jpg" alt="Royal Bean with Flow Roti" />
+        <h3>Royal Bean with Flow Roti</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="roti">
+        <img src="menu_image/chicken-curry-with-flow-roti.jpg" alt="Chicken Curry with Flow Roti" />
+        <h3>Chicken Curry with Flow Roti</h3>
+        <div bis_skin_checked="1">Price 90฿</div>
+      </article>
+
+      <article class="menu-card" data-category="roti">
+        <img
+          src="menu_image/flow-roti-with-granulated-sugar.jpg"
+          alt="Flow Roti with Granulated Sugar"
+        />
+        <h3>Flow Roti with Granulated Sugar</h3>
+        <div bis_skin_checked="1">Price 55฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/steam-rice-salad.jpg" alt="Steam Rice Salad" />
+        <h3>Steam Rice Salad</h3>
+        <div bis_skin_checked="1">Price 75฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/tea-leaf-rice-salad.jpg" alt="Tea Leaf Rice Salad" />
+        <h3>Tea Leaf Rice Salad</h3>
+        <div bis_skin_checked="1">Price 75฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/royal-bean-salad.jpg" alt="Royal Bean Salad" />
+        <h3>Royal Bean Salad</h3>
+        <div bis_skin_checked="1">Price 60฿</div>
+      </article>
+
+      <!-- ===== COLUMN 2 ===== -->
+
+      <article class="menu-card" data-category="noodle">
+        <img
+          src="menu_image/burmese-noodle-with-chicken-salad.jpg"
+          alt="Burmese Noodle with Chicken Salad"
+        />
+        <h3>Burmese Noodle with Chicken Salad</h3>
+        <div bis_skin_checked="1">Price 75฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/rakhine-style-anchory-salad.jpg" alt="Rakhine Style Anchory Salad" />
+        <h3>Rakhine Style Anchory Salad</h3>
+        <div bis_skin_checked="1">Price 75฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/tea-leaf-salad.jpg" alt="Tea Leaf Salad" />
+        <h3>Tea Leaf Salad</h3>
+        <div bis_skin_checked="1">Price 70฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/white-fungus-salad.jpg" alt="White Fungus Salad" />
+        <h3>White Fungus Salad</h3>
+        <div bis_skin_checked="1">Price 70฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/tofu-salad.jpg" alt="Tofu Salad" />
+        <h3>Tofu Salad</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="salad">
+        <img src="menu_image/rice-noodle-salad.jpg" alt="Rice Noodle Salad" />
+        <h3>Rice Noodle Salad</h3>
+        <div bis_skin_checked="1">Price 70฿</div>
+      </article>
+
+      <article class="menu-card" data-category="snack">
+        <img src="menu_image/deep-fried-tofu.jpg" alt="Deep Fried Tofu" />
+        <h3>Deep Fried Tofu</h3>
+        <div bis_skin_checked="1">Price 50฿</div>
+      </article>
+
+      <article class="menu-card" data-category="snack">
+        <img src="menu_image/vegetable-spring-roll.jpg" alt="Vegetable Spring Roll" />
+        <h3>Vegetable Spring Roll</h3>
+        <div bis_skin_checked="1">Price 50฿</div>
+      </article>
+
+      <article class="menu-card" data-category="snack">
+        <img src="menu_image/pan-grilled-pork-wonton.jpg" alt="Pan Grilled Pork Wonton" />
+        <h3>Pan Grilled Pork Wonton</h3>
+        <div bis_skin_checked="1">Price 50฿</div>
+      </article>
+
+      <!-- ===== COLUMN 3 ===== -->
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/spicy-fried-rice-with-chickenpork.jpg"
+          alt="Spicy Fried Rice with Chicken/Pork"
+        />
+        <h3>Spicy Fried Rice with Chicken/Pork</h3>
+        <div bis_skin_checked="1">Price 85/99฿</div>
+      </article>
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/chinese-fried-rice-with-chickenpork.jpg"
+          alt="Chinese Fried Rice with Chicken/Pork"
+        />
+        <h3>Chinese Fried Rice with Chicken/Pork</h3>
+        <div bis_skin_checked="1">Price 80/95฿</div>
+      </article>
+
+      <article class="menu-card" data-category="noodle">
+        <img
+          src="menu_image/chinese-fried-noodle-with-chickenpork.jpg"
+          alt="Chinese Fried Noodle with Chicken/Pork"
+        />
+        <h3>Chinese Fried Noodle with Chicken/Pork</h3>
+        <div bis_skin_checked="1">Price 80/95฿</div>
+      </article>
+
+      <article class="menu-card" data-category="noodle">
+        <img
+          src="menu_image/fried-vermicelli-with-chickenpork.jpg"
+          alt="Fried Vermicelli with Chicken/Pork"
+        />
+        <h3>Fried Vermicelli with Chicken/Pork</h3>
+        <div bis_skin_checked="1">Price 80/95฿</div>
+      </article>
+      <!-- ================= COLUMN 1 ================= -->
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/steam-rice-with-mixed-vegetable-chickenpork.jpg"
+          alt="Steam Rice with Mixed Vegetable &amp; Chicken/Pork"
+        />
+        <h3>Steam Rice with Mixed Vegetable &amp; Chicken/Pork</h3>
+        <div bis_skin_checked="1">Price 90/115฿</div>
+      </article>
+
+      <article class="menu-card" data-category="vegetable">
+        <img src="menu_image/stir-fried-mixed-vegetable.jpg" alt="Stir Fried Mixed Vegetable" />
+        <h3>Stir Fried Mixed Vegetable</h3>
+        <div bis_skin_checked="1">Price 80฿</div>
+      </article>
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/saute-chickenpork-with-dry-chilli.jpg"
+          alt="Saute Chicken/Pork with Dry Chilli"
+        />
+        <h3>Saute Chicken/Pork with Dry Chilli</h3>
+        <div bis_skin_checked="1">Price 110/125฿</div>
+      </article>
+
+      <article class="menu-card" data-category="rice">
+        <img
+          src="menu_image/nasi-lemak-deep-fried-chicken-wing.jpg"
+          alt="Nasi Lemak Deep Fried Chicken Wing"
+        />
+        <h3>Nasi Lemak Deep Fried Chicken Wing</h3>
+        <div bis_skin_checked="1">Price 120฿</div>
+      </article>
+
+      <!-- ================= COLUMN 2 ================= -->
+
+      <article class="menu-card" data-category="egg">
+        <img
+          src="menu_image/omelette-with-tomato-and-onion.jpg"
+          alt="Omelette with Tomato and Onion"
+        />
+        <h3>Omelette with Tomato and Onion</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="soup">
+        <img
+          src="menu_image/tom-yum-soup-with-chickenporkpraw.jpg"
+          alt="Tom Yum Soup with Chicken/Pork/Praw"
+        />
+        <h3>Tom Yum Soup with Chicken/Pork/Praw</h3>
+        <div bis_skin_checked="1">Price 110/120/135฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/prawn-curry.jpg" alt="Prawn Curry" />
+        <h3>Prawn Curry</h3>
+        <div bis_skin_checked="1">Price 100฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/jeera-chicken-curry.jpg" alt="Jeera Chicken Curry" />
+        <h3>Jeera Chicken Curry</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/braised-pork-curry.jpg" alt="Braised Pork Curry" />
+        <h3>Braised Pork Curry</h3>
+        <div bis_skin_checked="1">Price 70฿</div>
+      </article>
+
+      <!-- ================= COLUMN 3 ================= -->
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/braised-fish-curry-gravy.jpg" alt="Braised Fish Curry Gravy" />
+        <h3>Braised Fish Curry Gravy</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/rakhine-style-chicken-curry.jpg" alt="Rakhine Style Chicken Curry" />
+        <h3>Rakhine Style Chicken Curry</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img src="menu_image/nasi-lemak-chicken-curry.jpg" alt="Nasi Lemak Chicken Curry" />
+        <h3>Nasi Lemak Chicken Curry</h3>
+        <div bis_skin_checked="1">Price 120฿</div>
+      </article>
+
+      <article class="menu-card" data-category="curry">
+        <img
+          src="menu_image/chicken-livers-gizzards-curry.jpg"
+          alt="Chicken Livers &amp; Gizzards Curry"
+        />
+        <h3>Chicken Livers &amp; Gizzards Curry</h3>
+        <div bis_skin_checked="1">Price 65฿</div>
+      </article>
+
+      <!-- ================= DRINKS MENU ================= -->
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/soda-drinks.jpg" alt="Soda Drinks" />
+        <h3>Soda Drinks</h3>
+        <div bis_skin_checked="1">Price 40฿ each</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/honey-lemon-ice.jpg" alt="Honey Lemon Ice" />
+        <h3>Honey Lemon Ice</h3>
+        <div bis_skin_checked="1">Price 40฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/honey-lemon-hot.jpg" alt="Honey Lemon Hot" />
+        <h3>Honey Lemon Hot</h3>
+        <div bis_skin_checked="1">Price 30฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/coke-sprite-fanta.jpg" alt="Coke / Sprite / Fanta" />
+        <h3>Coke / Sprite / Fanta</h3>
+        <div bis_skin_checked="1">Price 20฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/water.jpg" alt="Water" />
+        <h3>Water</h3>
+        <div bis_skin_checked="1">Price 10฿</div>
+      </article>
+      <!-- 2 colum -->
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/burmese-hot-tea.jpg" alt="Burmese Hot Tea" />
+        <h3>Burmese Hot Tea</h3>
+        <div bis_skin_checked="1">Price 30/40฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/burmese-ice-tea.jpg" alt="Burmese Ice Tea" />
+        <h3>Burmese Ice Tea</h3>
+        <div bis_skin_checked="1">Price 50/55฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/hot-coffee.jpg" alt="Hot Coffee" />
+        <h3>Hot Coffee</h3>
+        <div bis_skin_checked="1">Price 30฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/iced-coffee.jpg" alt="Iced Coffee" />
+        <h3>Iced Coffee</h3>
+        <div bis_skin_checked="1">Price 40฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/milo-hot.jpg" alt="Milo Hot" />
+        <h3>Milo Hot</h3>
+        <div bis_skin_checked="1">Price 30฿</div>
+      </article>
+
+      <article class="menu-card" data-category="drink">
+        <img src="menu_image/milo-ice.jpg" alt="Milo Ice" />
+        <h3>Milo Ice</h3>
+        <div bis_skin_checked="1">Price 45฿</div>
+      </article>
+    </section>
+    <section class="location-section" id="location">
+      <h1>Visit Us</h1>
+      <div class="google-map-card">
+        <iframe
+          src="https://www.google.com/maps?q=Steven’s Kitchen & Hostel+Bangkok&output=embed"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <ul class="location-card">
+        <li>No. 61, Ramkhamhaeng Rd, Hua Mak, Bang Kapi, Bangkok</li>
+        <li>10:00 AM – 10:00 PM <br />OPEN DAILY</li>
+        <li>+66 123 456 789</li>
+      </ul>
+    </section>
+    <footer></footer>
+  </body>
+</html>
