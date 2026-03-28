@@ -11,7 +11,7 @@ navMenu.addEventListener('click', (e) => {
   }
 });
 // menu filter buttons
-document.addEventListener('DOMContentLoaded', function () {
+
   const buttons = document.querySelectorAll('.filter-menu-button button');
   const cards = document.querySelectorAll('.menu-card');
 
@@ -33,4 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-});
+
